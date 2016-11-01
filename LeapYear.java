@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class LeapYear
 {
-	
+	private boolean truth;
 	private int year;
 	
 	public LeapYear(int y)
@@ -23,8 +23,17 @@ public class LeapYear
 	}
 	
 	
-	public static boolean isLeapYear( int year )
+	public boolean isLeapYear( int year )
 	{
-		return false;
+		if(year % 4  == 0)
+		{
+			return true;
+		}
+		
+			return false;
+
 	}
+	
+
+
 }
