@@ -52,21 +52,21 @@ class AnimatedCar extends Canvas
 		window.drawString("Animation Lab - Lab05c", 25, 50 );
 
 		window.setColor(Color.GREEN);
-		window.fillRect(x,y+20,80,40);
-
+		window.fillRect(x,400,90,50);
 		
-		//draw a wheel
+		window.setColor(Color.BLUE);
+		window.fillOval(x,425,50,50);
 		
+		window.setColor(Color.BLUE);
+		window.fillOval(x+60,425,50,50);
+			
 		
-		//draw another wheel
+		x = x + 50;
 		
-		
-		//increment x by 50
-
-		
-		//if x has reached the far right side of the screen
-		//set it back to zero
-		
+		if(x >= 700)
+		{
+			x = 0;
+		}
 		
 	}	
 }
