@@ -1,73 +1,75 @@
 //© A+ Computer Science  -  www.apluscompsci.com
-//Name -
-//Date - 
-//Class -
-//Lab  -
+//Name - Preethi Ramesh
+//Date - 11/14/16
+//Class - 4th Period
+//Lab  - Character 
+
 
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class CharacterAnalyzer
+public class CharacterRunner
 {
-	private char character;
-
-	public void setChar(char c)
-	{	
-		character = c;
-	}
-
-	public char getChar()
+	public static void main ( String[] args )
 	{
-		return character;
-	}
+		Scanner keyboard = new Scanner(System.in);
+		
+		out.print("Enter a letter :: ");
+		char letter = keyboard.next().charAt(0);
+		CharacterAnalyzer test = new CharacterAnalyzer(letter);
+		out.println(test);  
+			
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);  
+			
+		
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);  
+			
+			
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);   
+			
+		
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);  
+			
+			
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);  
+			
+			
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);  
+			
+			
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);   
+			
+			
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setChar(letter);
+		out.println(test);    	
+			 //A
 
-	public boolean isUpper( )
-	{
-		if (character >= 65 && character <= 90 )
-		{
-			return true;
-		}
-		return false;
-	}
-
-	public boolean isLower( )
-	{
-		if (character >= 97 && character <= 122 )
-		{
-			return true;
-		}
-			return false;
-	}
-	
-	public boolean isNumber( )
-	{
-		if (character >= 48 && character <= 57)
-		{
-			return true;
-		}
-		return false;
-	}	
-
-	public int getASCII( )
-	{
-		return character;
-	}
-
-	public String toString()
-	{
-		if (isUpper() == true)
-		{
-			return"" + getChar() + "is an uppercase character. ASCII == " + getASCII() + "\n";
-		}
-		else if (isLower() == true)
-		{
-			return"" + getChar() + "is an lowercase character. ASCII == " + getASCII() + "\n";
-		}
-		else if 
-		{
-			return "" + getChar() + " is a number. ASCII == " + getASCII() + "\n";	  
-`		}
-}
+		//add more test cases
+		
+		
 		
 		
 		
