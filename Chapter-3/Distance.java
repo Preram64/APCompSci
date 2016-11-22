@@ -1,4 +1,4 @@
-//Â© A+ Computer Science  -  www.apluscompsci.com
+//© A+ Computer Science  -  www.apluscompsci.com
 //Name - Preethi Ramesh
 //Date - 10/17/16
 //Class - 4th Period
