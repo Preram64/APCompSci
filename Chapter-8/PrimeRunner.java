@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -21,7 +21,7 @@ public class PrimeRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 		
@@ -29,17 +29,44 @@ public class PrimeRunner
 		// create a Prime object and pass it 24
 		//     this will store 24 inside the object 
 		
-		// Prime obj = ???  ???(24);
-		
+		Prime obj = new  Prime(24);
+		out.println(obj);
+		out.println();
 
 		// STEP 2: **************************************************
 		// print out what the toString() method of obj returns
 		
-		// out.println(obj.???());
+		obj.setPrime(7);
+		out.println(obj);
+		out.println();
+			
+		obj.setPrime(100);
+		out.println(obj);
+		out.println();
+			
+		obj.setPrime(113);
+		out.println(obj);
+		out.println();
+			
+		obj.setPrime(65535);
+		out.println(obj);
+		out.println();
+			
+		obj.setPrime(2);
+		out.println(obj);
+		out.println();
+			
+		obj.setPrime(7334);
+		out.println(obj);
+		out.println();
 		
+		obj.setPrime(7919);
+		out.println(obj);
+		out.println();
 		
-		
-		
+		obj.setPrime(1115125003);
+		out.println(obj);
+		out.println();
 		
 		
 		// add test cases
