@@ -17,6 +17,8 @@ public class Box
 	// SAME NAME AS THE CLASS and no return type
 	public Box()
 	{
+		
+		
 		// initialize word to the empty string ""	
 	}
 
@@ -28,7 +30,7 @@ public class Box
 	//    to store in our instance variable word
 	public Box(String s)
 	{
-		
+		setWord(s);
 	} 
 
 
@@ -37,7 +39,7 @@ public class Box
 	//    to store in our instance variable word
 	public void setWord(String s)
 	{
-				
+		word = s;	
 	} 
 
 
@@ -47,7 +49,10 @@ public class Box
 		// the loop should run word.length() times
 		// each time through your loop you will print the value of word
 		
-		// for (int ? = ?;   ? < ?;  ?++)
+		 for (int length = 0; length <= word.length()-1; length++)
+		 	System.out.println(word);
+		 	System.out.println();
+		 	System.out.println();
 		// {
 			   // print out your word (use println, not print)
 		// }
