@@ -1,5 +1,5 @@
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -
+//Â© A+ Computer Science  -  www.apluscompsci.com
+//Name - Preethi Ramesh
 //Date -
 //Class -
 //Lab  -
@@ -25,12 +25,75 @@ public class MonsterRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 				
 		
 		Scanner keyboard = new Scanner(System.in);
+		out.print("Enter 1st monster's name : ");
+		String name = keyboard.nextLine();
+		out.print("Enter 1st monster's size : ");	
+		int size = keyboard.nextInt();
+		keyboard.nextLine(); 
+		Monster monster1 = new Monster(name,size);
+		
+		
+		out.print("Enter 2nd monster's name : ");
+		name = keyboard.nextLine();
+		out.print("Enter 2nd monster's size : ");
+		size = keyboard.nextInt();
+		out.println();
+		Monster monster2 = new Monster(name,size);
+		out.println();
+		
+		System.out.println("Monster 1 - " + monster1.toString());
+		System.out.println("Monster 2 - " + monster2.toString());
+		out.println();
+		
+		if (monster1.isSmaller(monster2) == true)
+			System.out.println("Monster 1 is SMALLER than Monster 2.");
+		else 
+			System.out.println("Monster 1 is BIGGER than Monster 2.");
+			
+		
+		if (monster1.namesTheSame(monster2) == true)
+			System.out.println("Monster 1 has the SAME NAME as Monster 2.");
+		else
+			System.out.println("Monster 1 does NOT HAVE THE SAME NAME as Monster 2.");
+			
+		out.println();	
+			
+		out.print("Enter 3rd monster's name : ");
+		keyboard.nextLine(); 
+		name = keyboard.nextLine();
+		out.print("Enter 3rd monster's size : ");	
+		size = keyboard.nextInt();
+		keyboard.nextLine(); 
+		Monster monster3 = new Monster(name,size);
+		out.println();
+		
+		out.print("Enter 4th monster's name : ");
+		name = keyboard.nextLine();
+		out.print("Enter 4th monster's size : ");
+		size = keyboard.nextInt();
+		out.println();
+		Monster monster4 = new Monster(name,size);
+		out.println();
+		
+		
+		
+		if (monster3.isSmaller(monster4) == true)
+			System.out.println("Monster 3 is SMALLER than Monster 4.");
+		else 
+			System.out.println("Monster 3 is BIGGER than Monster 4.");
+			
+		
+		if (monster3.namesTheSame(monster4) == true)
+			System.out.println("Monster 3 has the SAME NAME as Monster 4.");
+		else
+			System.out.println("Monster 3 does NOT HAVE THE SAME NAME as Monster 4.");
+		//    System.out.println(...
 		
 		// ******* monster 1***********************************		
 		// ask for the name and size
@@ -58,16 +121,16 @@ public class MonsterRunner
 		// Monster monster2 = ???
 
 
-		System.out.println();
+		//System.out.println();
 		
 		// print out Monster 1 - name and size
 		// this will call the monster's toString() method
-		System.out.println("Monster 1 - " + monster1.toString());
+		//System.out.println("Monster 1 - " + monster1.toString());
 		
 		// print out Monster 2 - name and size
 		// call the monster 2'S toString() method
 		// System.out.... 
-		System.out.println(); // prints a blank line
+		//System.out.println(); // prints a blank line
 		
 		
 		// compare the two monster's sizes
