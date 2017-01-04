@@ -1,6 +1,6 @@
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -
-//Date -
+//Â© A+ Computer Science  -  www.apluscompsci.com
+//Name - Preethi Ramesh
+//Date - 11/28/16
 //Class -
 //Lab  -
 
@@ -24,7 +24,7 @@ public class MorseCodeRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 		
@@ -34,15 +34,48 @@ public class MorseCodeRunner
 		// the value of 'A' to the constructor
 		//    make sure that your reference variable
 		//    refers to a MorseCode object 
-	    ???? obj = ??? ??????(?????);
+	    MorseCode test = new MorseCode('A');
+	    out.println(test.getMorseCode());
+	    out.println(test);
+	    out.println();
 		
+		test.setChar('B');
+		out.println(test.getMorseCode());
+	    out.println(test);
+	    out.println();
+		
+		
+		test.setChar('3');
+		out.println(test.getMorseCode());
+	    out.println(test);
+	    out.println();
+	    
+	    test.setChar('Z');
+		out.println(test.getMorseCode());
+	    out.println(test);
+	    out.println();
+	    
+	    test.setChar('8');
+		out.println(test.getMorseCode());
+	    out.println(test);
+	    out.println();
+	    
+	    test.setChar('F');
+		out.println(test.getMorseCode());
+	    out.println(test);
+	    out.println();
+	    
+	    test.setChar('0');
+		out.println(test.getMorseCode());
+	    out.println(test);
+	    out.println();
 		
 		// Step 2:
 		// use out.println(...) to print out the morse code
 		//    you will need to call your MorseCode object's 
 		//    getMorseCode() method
 		// look at your doc file to see the correct output
-		out.?????????(obj.get?????);
+		//out.?????????(obj.get?????);
 		
 		
 		// Step 3:
@@ -50,12 +83,12 @@ public class MorseCodeRunner
 		//    you will need to call your MorseCode object's 
 		//    toString() method
 		// look at your doc file to see the correct output
-		out.?????????(obj.to???);		
+		//out.?????????(obj.to???);		
 
 
 		// Step 4: print a blank line
 		// out.?????????
-		out.??????
+		//out.??????
 		
 
 
