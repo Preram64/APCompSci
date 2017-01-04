@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name - Preethi Ramesh
 //Date -
 //Class -
@@ -25,7 +25,7 @@ public class DecoderRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 		
@@ -33,13 +33,75 @@ public class DecoderRunner
 		// Step 1:
 		// Create a Scanner object to read in the letter or character
 		// make sure that variable keyboard refers to a Scanner object
-		???? keyboard = ?????;
+		Scanner keyboard = new Scanner(System.in);
+		out.print("Enter a letter :: ");
+		char letter = keyboard.next().charAt(0);
+		Decoder test = new Decoder(letter);
+		out.println(test);
+		out.println();
+		
+		
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
+
+		
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
 
 
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
+
+		
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
+
+
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
+
+
+
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
+
+
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
+
+
+		out.print("Enter a letter :: ");
+		letter = keyboard.next().charAt(0);
+		test.setLetter(letter);
+		out.println(test);
+		out.println();
+
+		
 		// Step 2:
 		// prompt the user to enter a letter
 		// look at the doc file for an example
-		out.??????(" ......");
+		//out.??????(" ......");
 		
 		
 		// Step 3:
@@ -47,7 +109,7 @@ public class DecoderRunner
 		// in variable letter (a char variable)
 		//    What method in the Scanner object reads
 		//    in the entire line? (And no it is NOT nextString())
-		??? letter = keyboard.????????().charAt(0);
+		//??? letter = keyboard.????????().charAt(0);
 		
 		
 		
@@ -58,18 +120,18 @@ public class DecoderRunner
 		//    refers to a Decoder object
 		// this will store the letter inside your object
 		// draw a picture of your object to help you understand 
-	    ???? test = ??? ??????(?????);
+	    //???? test = ??? ??????(?????);
 		
 		
 		// Step 5:
 		// use out.println(...) to print out the results
 		//    you will need to call your Decoder object's toString() method
 		// look at your doc file to see the correct output
-		out.?????????
+		//out.?????????
 		
 		
 		// Step 6: print a blank line
-		out.?????????
+		//out.?????????
 		
 		
 		
@@ -80,6 +142,17 @@ public class DecoderRunner
 
 
 
+
+
+
+
+
+
+
+
+
+	}
+}
 
 
 
