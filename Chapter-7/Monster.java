@@ -1,5 +1,5 @@
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -
+//Â© A+ Computer Science  -  www.apluscompsci.com
+//Name - Preethi Ramesh
 //Date -
 //Class -
 //Lab  -
@@ -13,24 +13,26 @@ public class Monster
 
 	public Monster()
 	{
-
+		name="";
+		howBig = 0;
 
 	}
 
 	public Monster(String n, int size)
 	{
-
+		name = n;
+		howBig = size;
 
 	}
 
 	public String getName()
 	{
-		return ""; // return the name of this monster
+		return name; // return the name of this monster
 	}
 	
 	public int getHowBig()
 	{
-		return 0; // return the value of howBig for this monster
+		return howBig; // return the value of howBig for this monster
 	}
 	
 	public boolean isBigger(Monster other)
@@ -41,7 +43,8 @@ public class Monster
 		
 		// if (getHowBig() > other.getHowBig())
 		//     return ????;
-		
+		if (getHowBig() > other.getHowBig())
+			return true;	
 		return false;
 	}
 	
@@ -49,7 +52,8 @@ public class Monster
 	{
 		// use isBigger() as an example
 		
-		
+		if (getHowBig() < other.getHowBig())
+			return true;
 		return false;
 	}
 
@@ -60,7 +64,8 @@ public class Monster
 		// and send (pass) it the other monster's name
 		// if ( name.????? (????) )
 		//    return ????
-		
+		if (getName().equals(other.getName()))
+			return true;
 		return false;
 	}
 	
@@ -69,6 +74,6 @@ public class Monster
 		// return the name of this monster followed by a space
 		// and then the size of this monster
 		 
-		return ""; // change this (see above)
+		return getName() + " " + getHowBig(); // change this (see above)
 	}
 }
