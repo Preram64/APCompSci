@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name - Preethi Ramesh
 //Date -
 //Class -
@@ -38,7 +38,7 @@ public class Decoder
 	// instance variable letter
 	public void setLetter(char let)
 	{
-		let = letter;
+		letter = let;
 
 	}
 
@@ -51,10 +51,17 @@ public class Decoder
 	//          These characters differ by 17 (48 to 65)
 	public char deCode()
 	{
-		char result=0;
+		char result='0';
 
 		if (letter >= 'a' && letter <= 'z')
 			result = (char) (letter - 32);		
+		else if (letter >= 'A' && letter <= 'Z')
+			result = (char)(letter + 32);
+		else if (letter >= '0' && letter <= '9')
+			result = (char)(letter + 17);
+		else 
+			result = '#';
+		
 		// else if ????
 		//     result = ????	
 		// add all checks
@@ -74,10 +81,12 @@ public class Decoder
 		// ??? should be replaced with your instance variable
 		// ???? should be replaced with a method call
 		
-		return ??? + " decodes to " + ????;  // change me
+		return letter + " decodes to " + deCode();  // change me
 
 	} // end marker for the method toString()
 	
 	
 }  // end marker for the class Decoder
+
+
 
