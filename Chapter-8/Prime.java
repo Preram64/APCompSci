@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -15,22 +15,21 @@ public class Prime
 
 	public Prime()
 	{
-		
+		number = 0;
 	}
 	
 	
 
 	public Prime(int num)
 	{
-		
+		setPrime(num);
 	}
 
 
 
 	public void setPrime(int num)
 	{
-
-
+		number = num;
 	}
 
 
@@ -52,15 +51,13 @@ public class Prime
 		//    if it is divisible, add 1 to your count
 		
 
-		// for (int divisor = 1;  divisor <= number;  divisor++)
+		for (int i = number - 1; i > 1; i--)
 		
-
-
-
-		if (count == 2)
-			return true;
-		
-		return false;
+			if(number % i == 0)
+				return false;
+				
+		return true;
+	
 	}
 
 
@@ -69,7 +66,10 @@ public class Prime
 	{
 		String output="";
 
-
+		if ( isPrime() == true )
+			output = number + " is a prime.";
+		else
+			output = number + " is not a prime.";
 		// store in output 
 		// number is prime.  or number is NOT prime  where 
 		//    number is the value of your number variable
