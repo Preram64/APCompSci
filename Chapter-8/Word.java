@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -14,21 +14,21 @@ public class Word
 
 	public Word()
 	{
-		
+		word = "";	
 	}
 
 
 
 	public Word(String s)
 	{
-		
+		setString(s);
 	}
 
 
 
 	public void setString(String s)
 	{
-		
+		word = s;
 	}
 
 
@@ -36,7 +36,9 @@ public class Word
 	// get the first character of word
 	public char getFirstChar()
 	{
-		return 0;
+		char ch = 0;
+		ch = word.charAt(0);	
+		return ch;
 	}
 
 
@@ -44,7 +46,9 @@ public class Word
 	// get the last character of word
 	public char getLastChar()
 	{
-		return 0;
+		char ch = 0;
+		ch = word.charAt(word.length() - 1);
+		return ch;
 	}
 
 
@@ -53,6 +57,9 @@ public class Word
 	{
 		String back="";
 		
+		for(int i = word.length() - 1; i>-1; i--)
+			back = back + word.charAt(i);
+			
 		// add a loop to get each character of word and 
 		// join it (concatenate) onto back
 		// back = back + word.charAt(?);
@@ -68,6 +75,6 @@ public class Word
  	public String toString()
  	{
  		// return the value of your instance variable word
- 		return ""; // replace me
+ 		return word; // replace me
 	}
 }
