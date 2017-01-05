@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -14,37 +14,41 @@ public class Factorial
 
 	public Factorial()
 	{
-		
+		number = 0;	
 	}
 
 
 
 	public Factorial(int num)
 	{
-		
+		setNum(num);
 	}
 
 
 
 	public void setNum(int num)
 	{
-		
+		number = num;
 	}
 
 
 
 	public int getNumber()
 	{
-		return 0;
+		
+		return number;
 	}
 
 
 
 	public long getFactorial( )
 	{
-		long factorial=1;
+		long factorial = 1;
 
-
+		for (int i = number; i > 0; i--)
+		{
+			factorial = factorial * i;
+		}
 		// use a for loop 
 		// loop from number downto 2
 		//    each time through the the loop
