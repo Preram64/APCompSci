@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -28,7 +28,7 @@ public class TriangleOne
 	//    to store in our instance variable word
 	public TriangleOne(String s)
 	{
-		
+		setWord(s);
 	} // String variable s is erased or destroyed at the end of this constructor
 	
 	
@@ -38,7 +38,7 @@ public class TriangleOne
 	//    to store in our instance variable word
 	public void setWord(String s)
 	{
-		
+		word = s;
 	} // String variable s is erased or destroyed at the end of this method
 
 
@@ -46,6 +46,7 @@ public class TriangleOne
 
 	public void print( )
 	{
-		
+		for ( int i = word.length(); i >= 0; i--)
+			System.out.println(word.substring(0,i));
 	}
 }
