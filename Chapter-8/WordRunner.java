@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -20,7 +20,7 @@ public class WordRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 
@@ -29,7 +29,7 @@ public class WordRunner
 		// create a Word object and pass it the String "Hello"
 		//     this will store "Hello" inside the object 
 		
-		// Word obj = ???  ???("Hello");
+		Word obj = new Word("Hello");
 		
 		
 		
@@ -37,7 +37,7 @@ public class WordRunner
 		// print out "Original Word: " and join onto it
 		//    what the toString() method of obj returns
 		
-		// out.println("Original Word: " + obj.???());
+		out.println("Original Word: " + obj);
 		
 		
 		
@@ -46,7 +46,7 @@ public class WordRunner
 		// First Letter:  and then the first letter of word
 		// call a method of the Word object referenced by obj 
 		
-		// out.println("First Letter:  " + obj.???());
+		out.println("First Letter:  " + obj.getFirstChar());
 		
 		
 		// STEP 4: **************************************************
@@ -54,7 +54,7 @@ public class WordRunner
 		// Last Letter:  and then the last letter of word
 		// call a method of the Word object referenced by obj 
 		
-		// out.println("Last Letter:   " + obj.???());
+		out.println("Last Letter:   " + obj.getLastChar());
 		
 		
 		
@@ -63,14 +63,35 @@ public class WordRunner
 		// Backwards:  and then the word backwards
 		// call a method of the Word object referenced by obj 
 		
-		// out.println("Backwards:     " + obj.???());
+		out.println("Backwards:     " + obj.getBackWards());
 		
 		
 		
 		// Step 6: **************************************************
-		// print two blank lines
+		out.println();
+		out.println();
 		
 		
+		obj.setString("Jukebox");
+		out.println("First Letter:  " + obj.getFirstChar());
+		out.println("Last Letter:   " + obj.getLastChar());
+		out.println("Backwards:     " + obj.getBackWards());
+		out.println();
+		out.println();
+		
+		obj.setString("TCEA");
+		out.println("First Letter:  " + obj.getFirstChar());
+		out.println("Last Letter:   " + obj.getLastChar());
+		out.println("Backwards:     " + obj.getBackWards());
+		out.println();
+		out.println();
+		
+		obj.setString("UIL");
+		out.println("First Letter:  " + obj.getFirstChar());
+		out.println("Last Letter:   " + obj.getLastChar());
+		out.println("Backwards:     " + obj.getBackWards());
+		out.println();
+		out.println();
 		
 		
 		// add test cases
