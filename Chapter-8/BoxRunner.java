@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -20,16 +20,32 @@ public class BoxRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 
 		
 		
+		
+		
 		// STEP 1: **************************************************
 		// create a Box object and pass it the String "hippo"
 		
-		// Box obj = ???  ???("hippo");
+		Box obj = new  Box("hippo");
+		obj.print();
+		
+		obj.setWord("abcd");
+		obj.print();
+				
+		obj.setWord("it");
+		obj.print();
+				
+		obj.setWord("a");
+		obj.print();
+		
+		obj.setWord("chicken");
+		obj.print();
+		
 		
 		
 		
