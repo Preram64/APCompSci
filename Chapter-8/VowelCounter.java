@@ -1,15 +1,19 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
 //Lab  - 
-
 import static java.lang.System.*;
 
 public class VowelCounter
 {
 	public static String getNumberString( String s)
 	{
+		
+		int count = 0;
+		
+		String output = "";
+		
 		// you will receive a String called s with the data
 		
 		
@@ -28,32 +32,38 @@ public class VowelCounter
 		// STEP 3:
 		// you will need to loop through the String and look at each character
 		
-		// for (int i=?;  i < s.?????();  ?++)
-		// {
+		for (int i=0;  i < s.length();  i++)
+		{
 			  // each time through the loop you need to get the character at the i position
-			  // char ch = s.???(i);
+			  char ch = s.charAt(i);
 			  
-			  // you will now need an if else statement to see if the character is a vowel
+			 // you will now need an if else statement to see if the character is a vowel
 			  //    or you may want to use a switch statement
 			  
-			  // if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ...     )
-			  // {
+			  if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O' || ch == 'u' || ch == 'U')
+			  {
 			  		// add your count to your output
-			  		// output = output + ???;
+			  		output = output + count;
+			  		count ++;
+			  		
+			  		if (count == 10)
+			  			count = 0;
+			  		count = count;
 			  		
 			  		// add 1 to your count
 			  		
 			  		// see if your count == 10, and if so, set it to 0
-			  //  }
-			  //  else
-			  //  {
+			  }
+			  else
+			  {
 			  			// add your character ch to your output
+			  			output=output+ch;
 			  			
-			  //  }
+			  }
 			  
-		// }
+		}
 		
-		return "";  // return the new String that you created 
+		return output;  // return the new String that you created 
 	}
 }
 
