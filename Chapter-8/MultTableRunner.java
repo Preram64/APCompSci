@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -21,7 +21,7 @@ public class MultTableRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 
@@ -29,7 +29,8 @@ public class MultTableRunner
 		// STEP 1: **************************************************
 		// create a MultTable object and pass it the values 5,5
 		
-		// MultTable obj = ???  ???(?, ?);
+		 MultTable obj = new MultTable(5,5);
+		 obj.printTable();
 		
 		
 		
