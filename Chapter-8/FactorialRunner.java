@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -20,7 +20,7 @@ public class FactorialRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Preethi Ramesh");
 		out.println();		
 		out.println();		
 		
@@ -28,7 +28,27 @@ public class FactorialRunner
 		// create a Factorial object and pass it 5
 		//     this will store 5 inside the object 
 		
-		// Factorial obj = ???  ???(5);
+		Factorial obj = new Factorial(5);
+		out.println(obj);
+		
+		obj.setNum(4);
+		out.println(obj);
+		
+		obj.setNum(8);
+		out.println(obj);
+		
+		obj.setNum(15);
+		out.println(obj);
+		
+		obj.setNum(6);
+		out.println(obj);
+		
+		obj.setNum(9);
+		out.println(obj);
+		
+		obj.setNum(3);
+		out.println(obj);
+		
 		
 
 		// STEP 2: **************************************************
