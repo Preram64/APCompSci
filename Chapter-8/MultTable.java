@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -32,7 +32,7 @@ public class MultTable
 	//    to store in our instance variables number and stop
 	public MultTable(int num, int end)
 	{
-		
+		setTable(num,end);
 	} // int variables num and end are erased or destroyed at the end of this constructor
 
 
@@ -42,7 +42,8 @@ public class MultTable
 	//    to store in our instance variables number and stop
 	public void setTable(int num, int end)
 	{
-		
+		number = num;
+		stop = end;	
 	}  // int variables num and end are erased or destroyed at the end of this method
 
 
@@ -53,22 +54,20 @@ public class MultTable
 		// STEP 1:  *****************************************************************
 		// print out  Multiplication table for ? 
 		//     where ? is the value of your variable number
+		 out.println("multiplication table for " + number);
 		
-		// out.println("Multiplication ... " + ?);
-		
-		
-		
+	
 		// STEP 2:  *****************************************************************
 		// You will need a loop that goes from 1 to end (inclusive)
 		// each time through the loop you will need to print out
 		//     your loop value, some spaces, and your loop value * number
 		
 		
-		// for (int ? = ?;   ? <= ?;  ?++)
-		// {
+	    for (int i = 1;   i <= stop;  i++)
+		{
 				// println your loop value, some spaces, and your loop value * number
-				
-		// }
+				out.println(i + "         " + i * number);
+		}
 		
 		
 		
