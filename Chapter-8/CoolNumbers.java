@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -17,9 +17,9 @@ public class CoolNumbers
 	{
 		 // you will not need a loop for this
 		 // think about an if statement 
-		 // if (num % 3 == 1 && num % 4 ==1 && ... )
-		 //     return ????;
 		 
+		 if (num % 3 == 1 && num % 4 ==1 && num % 5 == 1 && num % 6 == 1)
+		     return true;
 		 
 		 return false;
 	}
@@ -36,7 +36,7 @@ public class CoolNumbers
 		// you will need a variable to keep track of how many
 		// cool numbers you have found
 		
-		// ??? count = ?;
+		int count = 0;
 		
 		
 		// STEP 2:
@@ -46,19 +46,21 @@ public class CoolNumbers
 		
 		// 
 		
-		// for (int num = ?;  num <= ????;  ???++)
-		// {
-			   // STEP 3: 
+		 for (int num = 6;  num <= stop;  num++)
+		{
+		
+			if(isCoolNumber(num)==true)
+					count++;
+		 	   // STEP 3: 
 			   // each time through this loop
 			   // you should call isCoolNumber and send it (pass it) your num
 			   // if it returns true, then add 1 to your count variable
-		
-		// }
+		}
 		
 		// STEP 3:
 		// you should return the number of cool numbers that you found
 		
-		return 0;  // change me
+		return count;  // change me
 	}
 	
 	
