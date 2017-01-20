@@ -1,4 +1,4 @@
-//Â© A+ Computer Science  -  www.apluscompsci.com - 2017
+//© A+ Computer Science  -  www.apluscompsci.com - 2017
 //Name - Preethi Ramesh
 //Date -
 //Class -
